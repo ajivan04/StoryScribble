@@ -19,6 +19,7 @@ def create_library():
                     id INTEGER PRIMARY KEY AUTOINCREMENT,
                     user_id INTEGER,
                     title TEXT NOT NULL,
+                    num_pages INT NOT NULL,
                     FOREIGN KEY (user_id) REFERENCES Users (id)
                 )''')
 
