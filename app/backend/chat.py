@@ -29,7 +29,7 @@ def create_story(age, images):
     messages = [
         {'role': 'system', 'content': "You are writing children's stories for young children based on drawing that they give you. Please use the appropiate vocabulary and only output the story you make."},
         {'role': 'user', 'content': [
-            {'type': 'text', 'text': 'Based on these images, can you create a story that is easy for a 5 year old to read and will help me them to learn how to get better at reading. Note that the black bars represent different frames of the story. Note that the vocabulary used should be appropriate for a 5 year old to understand. Only output the story and nothing else.'},
+            {'type': 'text', 'text': 'Based on this image, can you create a story that is easy for a 9 year old to read and will help them learn how to get better at reading. Note that in this story there is x amount of frames. Because this is supposed to represent a picture book, it should only be one description per frame (so if we specify and say that there is only one frame then there should only be one description). So that means that you have to output 1 description(s).Additionally, separate each description of each frame by an enter. At the beginning of your answer say the title of the story then do an enter then go into all the descriptions. Note that the vocabulary used should be appropriate for a 9 year old to understand. Even though it is a story it is possible for the story to be one sentece long because there is only one frame therefore only one description.'},
             {'type': 'image_url', 'image_url': {
                 'url': f"data:image/png;base64, {image}"
             }}
