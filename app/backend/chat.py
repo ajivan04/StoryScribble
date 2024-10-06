@@ -1,7 +1,7 @@
 from openai import OpenAI
 from dotenv import load_dotenv
 import os
-from IPython.display import Image, display, Audio, Markdown
+from IPython.display import Image
 import base64
 from imgsplicer import image_splicer
 
