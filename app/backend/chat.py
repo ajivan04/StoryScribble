@@ -3,6 +3,7 @@ from dotenv import load_dotenv
 import os
 from IPython.display import Image, display, Audio, Markdown
 import base64
+from imgsplicer import image_splicer
 
 load_dotenv()
 
@@ -19,12 +20,9 @@ def process_image(image_url):
     with open(image_url, "rb") as image_file:
         return base64.b64encode(image_file.read()).decode("utf-8")
     
-def image_splicer(images):
-    return None
-
-def create_story(age, frames, images):
-    #storyboard = image_splicer(images)
-    image = process_image(images)
+def create_story(age, frames):
+    storyboard = image_splicer(frames)
+    image = process_image(storyboard)
 
     messages = [
         {'role': 'system', 'content': "You are writing children's stories for young children based on drawing that they give you. Please use the appropiate vocabulary and only output the story you make."},
@@ -43,13 +41,16 @@ def create_story(age, frames, images):
     )
 
     return response.choices[0].message.content
+'''
 
 print("\n\n\n")
 print('This is the single picture example example: ')
 print(create_story(5, 1, "assets/single-frame.png"))
+'''
+
 print("\n\n\n")
 print('This is the Superman example: ')
-print(create_story(10, 3, "assets/combined_image.png"))
+print(create_story(10, 3))
 print("\n")
 
 
