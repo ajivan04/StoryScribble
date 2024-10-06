@@ -41,18 +41,5 @@ def create_story(age, frames):
     )
 
     return response.choices[0].message.content
-'''
-
-print("\n\n\n")
-print('This is the single picture example example: ')
-print(create_story(5, 1, "assets/single-frame.png"))
-'''
-
-print("\n\n\n")
-print('This is the Superman example: ')
-print(create_story(10, 3))
-print("\n")
-
-
 
 

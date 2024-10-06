@@ -27,3 +27,8 @@ Run App
 ```
 npm start
 ```
+
+### Run Backend Demo
+```
+python3 ./app/backend/app.py
+```
