@@ -1,6 +1,5 @@
 # StoryScribble
-This is an app that is designed to help young children learn how to read/improve their reading skills by generating stories that are suitable for their age based on pictures that they draw.  
-
+StoryScribble is an educational game that sparks creativity while boosting literacy skills in children! By blending art and storytelling, our app helps young learners express their imagination and improve reading comprehension, all while having fun. It's a powerful tool to nurture early learning in an engaging and interactive way!
 ### Getting Started
 
 Create Virtual Environment
